@@ -37,14 +37,6 @@ The challenges rely on the specific architecture layouts, system permissions, an
    ```
 4. **Execution & Flag Retrieval:** 
    Run the generated binary or automated script according to the challenge criteria, passing the necessary flags, parameters, or argument pointers:
-   ```bash
-   # Execute with custom inputs or command-line arguments
-   ./solution_bin [target_arguments]
-   ```
-5. **Validation:** Check the operational exit status or review the tool output within the platform's isolated sandbox to verify successful check execution and flag capturing:
-   ```bash
-   echo \$?
-   ```
 
 ---
 
