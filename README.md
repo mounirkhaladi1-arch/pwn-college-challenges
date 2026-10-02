@@ -35,9 +35,11 @@ The challenges rely on the specific architecture layouts, system permissions, an
    # Link the object file to generate the executable binary
    ld -o solution_bin solution.o
    ```
-4. **Execution & Flag Retrieval:** 
-   Run the generated binary or automated script according to the challenge criteria, passing the necessary flags, parameters, or argument pointers:
-
+4. **Execution & Platform Verification Patterns:** 
+   The validation pipeline varies dramatically depending on the specific track. Reviewers should not expect a simple compile-and-run workflow for every solution. The platform utilizes multiple diverse execution patterns:
+   * **Parameter-Driven Checkers:** Standalone solution binaries are rarely executed in isolation; they are typically passed directly as arguments or input pointers to the platform's automated testing suite (e.g., `/challenge/check solve.s` or `/challenge/check ./solution_bin`).
+   * **Multi-Checker Pipelines:** Advanced verification can involve interacting with multiple interconnected background checkers, handlers, and validation layers executing concurrently to audit specific register environments and stack layouts.
+   * **Diverse Challenge Mechanics:** Many challenges do not involve source code compilation or scripting at all. Tasks routinely require reverse engineering compiled binary executables to manually extract underlying code, navigating specific text-based puzzle environments, or playing interactive architectural games designed to benchmark hex-based math and logical constraints.
 ---
 
 ## ⚖️ Open Source License
