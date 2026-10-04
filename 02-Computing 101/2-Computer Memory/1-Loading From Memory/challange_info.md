@@ -1,7 +1,7 @@
 # challenge: accessing memory
 
 ## 🛠️ quick access
-👉 **[direct link to challenge] ( https://pwn.college/computing-101/memory/ )**
+👉 **[direct link to challenge](https://pwn.college/computing-101/memory/)**
 
 ---
 
