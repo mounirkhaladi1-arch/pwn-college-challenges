@@ -2,7 +2,7 @@
 
 ## 🛠️ quick access
 
-👉 **[direct link to challenge](https://pwn.college/nibbling-on-numbers/negative-numbers/)**
+👉 **[direct link to challenge](https://pwn.college/computing-101/nibbling-on-numbers/)**
 
 ---
 
