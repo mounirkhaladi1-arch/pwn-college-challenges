@@ -2,14 +2,14 @@
 
 ## 🛠️ quick access
 
-👉 **[direct link to challenge](https://pwn.college/computing-101/nibbling-on-numbers/)**[cite: 1]
+👉 **[direct link to challenge](https://pwn.college/computing-101/nibbling-on-numbers/)**
 
 ---
 
 ## 🔗 environment details
 
-* **dojo track:** computing 101[cite: 1]
-* **module:** nibbling on numbers[cite: 1]
+* **dojo track:** computing 101
+* **module:** nibbling on numbers
 * **challenge level:** 16-bit two's complement decoding
 * **execution format:** interactive shell prompt (`/challenge/decode`)
 
