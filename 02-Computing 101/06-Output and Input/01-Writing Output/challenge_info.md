@@ -8,7 +8,7 @@
 
 ## 🔗 environment details
 
-* **dojo track / module:** computing-101 / hello-hackers
+* **dojo track / module:** computing-101 / Output and Input
 * **challenge level:** invoking the `write` system call to output characters from command-line arguments (`argv[1]`)
 * **execution format:** custom assembly compilation (`as`, `ld`), interactive testing, and automated validation (`/challenge/check`)
 
