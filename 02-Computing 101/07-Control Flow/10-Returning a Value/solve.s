@@ -1,11 +1,9 @@
-;; 10 - Returning a Value
-;; Personal assembly solution.
+.intel_syntax noprefix  
+.global solve
 
-.intel_syntax noprefix
-.global _start
-
-_start:
-    ; TODO: implement solution
-    mov rax, 60
-    xor rdi, rdi
-    syscall
+solve:
+    # 1. Move the incoming argument (secret in rdi) into the return register (rax)
+    mov rax, rdi
+    
+    # 2. Return control back to the calling harness
+    ret
