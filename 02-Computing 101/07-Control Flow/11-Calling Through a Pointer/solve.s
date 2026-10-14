@@ -1,11 +1,9 @@
-;; 11 - Calling Through a Pointer
-;; Personal assembly solution.
+.intel_syntax noprefix  
+.global solve
 
-.intel_syntax noprefix
-.global _start
-
-_start:
-    ; TODO: implement solution
-    mov rax, 60
-    xor rdi, rdi
-    syscall
+solve:
+    # 1. Call the function pointer passed as the first argument in rdi
+    call rdi
+    
+    # 2. Return cleanly back to the harness runner
+    ret
