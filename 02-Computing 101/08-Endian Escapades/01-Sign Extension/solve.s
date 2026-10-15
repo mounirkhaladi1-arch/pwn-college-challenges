@@ -1,11 +1,9 @@
-;; 01 - Sign Extension
-;; Personal assembly solution.
+.intel_syntax noprefix  
+.global solve
 
-.intel_syntax noprefix
-.global _start
-
-_start:
-    ; TODO: implement solution
-    mov rax, 60
-    xor rdi, rdi
-    syscall
+solve:
+    # 1. Load the signed byte from the pointer in rdi and sign-extend it into 64-bit rax
+    movsx rax, byte ptr [rdi]
+    
+    # 2. Return the sign-extended 64-bit value back to the harness
+    ret
