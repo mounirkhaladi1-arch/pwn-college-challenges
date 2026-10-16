@@ -1,11 +1,20 @@
-;; 07 - Uppercase a String
-;; Personal assembly solution.
+.intel_syntax noprefix  
+.global str_upper
 
-.intel_syntax noprefix
-.global _start
+str_upper:
+loop:
+    # 1. Clear the 6th bit to convert lowercase to uppercase in place
+    and byte ptr [rdi], 0xdf
+    
+    # 2. Check if we have reached the null terminator (0x0)
+    cmp byte ptr [rdi], 0
+    je done
+    
+    # 3. Advance the string pointer to the next character
+    inc rdi
+    
+    # 4. Repeat loop for the next byte
+    jmp loop
 
-_start:
-    ; TODO: implement solution
-    mov rax, 60
-    xor rdi, rdi
-    syscall
+done:
+    ret
