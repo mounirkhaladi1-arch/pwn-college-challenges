@@ -1,11 +1,12 @@
-;; 06 - Lowercase a String
-;; Personal assembly solution.
+.intel_syntax noprefix  
+.global chr_lower
 
-.intel_syntax noprefix
-.global _start
-
-_start:
-    ; TODO: implement solution
-    mov rax, 60
-    xor rdi, rdi
-    syscall
+chr_lower:
+    # 1. Set the 6th bit (0x20) to convert uppercase to lowercase
+    or rdi, 0x20
+    
+    # 2. Move the converted character into rax as the return value
+    mov rax, rdi
+    
+    # 3. Return from the function
+    ret
