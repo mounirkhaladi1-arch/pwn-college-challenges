@@ -1,11 +1,12 @@
-;; 02 - Loading Stale Stack Data
-;; Personal assembly solution.
+.intel_syntax noprefix  
+.global solve
 
-.intel_syntax noprefix
-.global _start
-
-_start:
-    ; TODO: implement solution
-    mov rax, 60
-    xor rdi, rdi
-    syscall
+solve:
+    # 1. Call the load_secret function passed via the function pointer in rdi
+    call rdi
+    
+    # 2. Retrieve the 8-byte stale value left behind on the stack at [rsp - 0x10] into rax
+    mov rax, qword ptr [rsp - 0x10]
+    
+    # 3. Return the stale secret value
+    ret
