@@ -21,3 +21,6 @@ When a program runs under GDB, the extra debugger overhead shifts the initial st
 ```bash
 # Calculate the exact difference between shell stack address and GDB target address, pad environment, and run program
 env -i fou=$(printf 'x%.0s' $(seq 1$((0x7fffffffefd0 - 0x7fffffffed1d)))) /challenge/program
+```
+Note: Stack addresses are randomized. Replace 0x7fffffffefd0 and 0x7fffffffef55 with the actual first and second addresses observed in your session.
+
