@@ -1,11 +1,11 @@
-;; 01 - A Single Digit
-;; Personal assembly solution.
-
 .intel_syntax noprefix
-.global _start
+.global atoi_digit
 
-_start:
-    ; TODO: implement solution
-    mov rax, 60
-    xor rdi, rdi
-    syscall
+atoi_digit:
+    # Load single ASCII character byte into rax with zero extension
+    movzx rax, byte ptr [rdi]
+    
+    # Subtract ASCII offset (0x30) to convert character to integer value
+    sub rax, 0x30
+    
+    ret
