@@ -4,6 +4,7 @@
 - **Module:** `the-stack-revisited` (`computing-101`)[cite: 1]
 - **Challenge Name:** `aligning-the-stack-through-gdb`[cite: 2]
 - **Objective:** Use GDB to identify the exact stack address where `argv[0]` lands during debugging, then match that exact stack offset in the normal shell environment by dynamically padding an environment variable.
+* 👉 **[direct link to module](https://pwn.college/computing-101/the-stack-revisited/)**
 
 ---
 
