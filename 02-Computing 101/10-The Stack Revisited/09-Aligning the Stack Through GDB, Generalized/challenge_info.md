@@ -4,6 +4,7 @@
 - **Module:** `the-stack-revisited` (`computing-101`)
 - **Challenge Name:** `aligning-the-stack-through-gdb-generalized`
 - **Objective:** Extract the target stack address under GDB, calculate the difference against a baseline shell run with a single environment variable, and pad that exact environment variable to shift `argv[0]` precisely onto the target address.
+* 👉 **[direct link to module](https://pwn.college/computing-101/the-stack-revisited/)**
 
 ---
 
