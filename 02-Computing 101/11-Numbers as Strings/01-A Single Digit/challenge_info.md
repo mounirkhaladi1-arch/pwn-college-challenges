@@ -4,6 +4,7 @@
 - **Module:** `numbers-as-strings` (`computing-101`)
 - **Challenge Name:** `a-single-digit`
 - **Objective:** Implement a shared library function `atoi_digit(char *str)` that receives a pointer to a single ASCII character digit, converts it into its corresponding mathematical integer value, and returns it in `rax`.
+* 👉 **[direct link to challenge](https://pwn.college/computing-101/numbers-as-strings/)**
 
 ---
 
