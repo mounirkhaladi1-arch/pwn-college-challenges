@@ -1,11 +1,10 @@
-;; 07 - A Single Digit, Back to Text
-;; Personal assembly solution.
-
 .intel_syntax noprefix
-.global _start
+.global itoa_digit
 
-_start:
-    ; TODO: implement solution
-    mov rax, 60
-    xor rdi, rdi
-    syscall
+itoa_digit:
+    # Copy raw integer value directly from rdi into rax
+    mov rax, rdi
+    
+    # Add ASCII base offset (0x30 / '0') to convert integer to character
+    add rax, 0x30
+    ret
