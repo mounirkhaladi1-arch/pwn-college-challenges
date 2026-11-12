@@ -1,6 +1,7 @@
 .intel_syntax noprefix
 .global itoa_digit
 .global itoa
+
 itoa:
     # Check if input is less than 10
     cmp rdi, 10
@@ -29,8 +30,15 @@ itoa:
 
 single_digit:
     # --- SINGLE DIGIT LOGIC (0 - 9) ---
-    # rdi already holds the single digit!
     call itoa_digit      # Converts rdi to ASCII character in rax
     mov [rsi], al        # Write single character to buffer
     mov rax, 1           # Return count = 1
+    ret
+
+itoa_digit:
+    # Copy raw integer value directly from rdi into rax
+    mov rax, rdi
+    
+    # Add ASCII base offset (0x30 / '0') to convert integer to character
+    add rax, 0x30
     ret
