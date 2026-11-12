@@ -1,3 +1,6 @@
+.intel_syntax noprefix
+.global itoa_digit
+.global itoa
 itoa:
     # Check if input is less than 10
     cmp rdi, 10
