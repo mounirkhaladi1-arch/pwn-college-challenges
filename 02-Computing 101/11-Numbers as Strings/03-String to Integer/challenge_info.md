@@ -4,6 +4,7 @@
 - **Module:** `numbers-as-strings` (`computing-101`)
 - **Challenge Name:** `string-to-integer`
 - **Objective:** Implement a fully generalized `atoi` routine in x86-64 assembly that iterates through an arbitrary null-terminated ASCII string, converts each digit character dynamically, accumulates the total value, and handles numbers of any length.
+* 👉 **[direct link to challenge](https://pwn.college/computing-101/numbers-as-strings/)**
 
 ---
 
