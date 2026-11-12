@@ -4,8 +4,7 @@
 * Module: numbers-as-strings (computing-101)
 * Challenge Name: a-whole-program
 * Objective: Transition from shared library functions (.so) to a raw standalone ELF executable. Receive a command-line argument string from argv[1], parse it into a signed integer using custom atoi logic, and exit the process using that integer as the exit status code (exit(status)) via syscall 60.
-
----
+* 👉 **[direct link to challenge](https://pwn.college/computing-101/numbers-as-strings/)**
 
 ## ⚙️ Low-Level Mechanics & Standalone Entry Points
 
