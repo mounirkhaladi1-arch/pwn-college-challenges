@@ -4,6 +4,7 @@
 - **Module:** `numbers-as-strings` (`computing-101`)
 - **Challenge Name:** `two-digits`
 - **Objective:** Implement a multi-character `atoi` routine in x86-64 assembly that converts a two-digit ASCII string (e.g., `"42"`) into its integer value by processing the tens place, multiplying by 10, and adding the units place.
+* 👉 **[direct link to challenge](https://pwn.college/computing-101/numbers-as-strings/)**
 
 ---
 
