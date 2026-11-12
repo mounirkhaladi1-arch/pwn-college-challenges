@@ -4,6 +4,7 @@
 - **Module:** `the-stack-revisited` (`computing-101`)[cite: 1]
 - **Challenge Name:** `aligning-the-stack-through-the-environment`[cite: 2]
 - **Objective:** Control and precisely shift the initial stack pointer and `argv[0]` placement by padding environment variables via the `env` command.
+* 👉 **[direct link to module](https://pwn.college/computing-101/the-stack-revisited/)**
 
 ---
 
