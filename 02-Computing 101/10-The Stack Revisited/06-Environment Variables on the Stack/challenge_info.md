@@ -4,6 +4,7 @@
 - **Module:** `the-stack-revisited` (`computing-101`)
 - **Challenge Name:** `environment-variables-on-the-stack`
 - **Objective:** Analyze and parse the initial stack layout of a standalone ELF executable to locate, extract, and write out the `FLAG` environment variable from `envp[0]`.
+* 👉 **[direct link to module](https://pwn.college/computing-101/the-stack-revisited/)**
 
 ---
 
