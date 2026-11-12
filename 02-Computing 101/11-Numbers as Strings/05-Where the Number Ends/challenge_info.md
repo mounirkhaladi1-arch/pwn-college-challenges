@@ -4,6 +4,7 @@
 - **Module:** `numbers-as-strings` (`computing-101`)
 - **Challenge Name:** `where-the-number-ends`
 - **Objective:** Extend the signed `atoi` routine to safely parse integers followed by arbitrary trailing junk characters (e.g., `'237884773%/94Y)'` or `'-1323727976a'`), terminating parsing cleanly upon encountering non-digit characters or null bytes.
+* 👉 **[direct link to challenge](https://pwn.college/computing-101/numbers-as-strings/)**
 
 ---
 
