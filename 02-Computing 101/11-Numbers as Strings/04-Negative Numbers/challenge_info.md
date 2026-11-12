@@ -4,6 +4,7 @@
 - **Module:** `numbers-as-strings` (`computing-101`)
 - **Challenge Name:** `negative-numbers`
 - **Objective:** Extend the generalized `atoi` routine to handle signed integers, detecting leading minus signs (`'-'`, `0x2d`), adjusting the string base pointer, tracking sign multipliers, and returning the correctly signed negative or positive integer.
+* 👉 **[direct link to challenge](https://pwn.college/computing-101/numbers-as-strings/)**
 
 ---
 
