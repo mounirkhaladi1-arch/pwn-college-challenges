@@ -1,11 +1,33 @@
-;; 09 - Drop the Leading Zero
-;; Personal assembly solution.
+itoa:
+    # Check if input is less than 10
+    cmp rdi, 10
+    jl single_digit
 
-.intel_syntax noprefix
-.global _start
+    # --- TWO DIGIT LOGIC (10 - 99) ---
+    mov rax, rdi
+    xor rdx, rdx
+    mov rcx, 10
+    div rcx              # rax = tens, rdx = ones
 
-_start:
-    ; TODO: implement solution
-    mov rax, 60
-    xor rdi, rdi
-    syscall
+    # Convert & write tens to [rsi]
+    push rdx
+    mov rdi, rax
+    call itoa_digit
+    mov [rsi], al
+    pop rdx
+
+    # Convert & write ones to [rsi + 1]
+    mov rdi, rdx
+    call itoa_digit
+    mov [rsi + 1], al
+
+    mov rax, 2           # Return count = 2
+    ret
+
+single_digit:
+    # --- SINGLE DIGIT LOGIC (0 - 9) ---
+    # rdi already holds the single digit!
+    call itoa_digit      # Converts rdi to ASCII character in rax
+    mov [rsi], al        # Write single character to buffer
+    mov rax, 1           # Return count = 1
+    ret
